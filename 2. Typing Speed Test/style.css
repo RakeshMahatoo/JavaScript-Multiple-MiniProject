@@ -1,0 +1,115 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background and centering */
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper */
+.wrapper {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Input Field */
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+.input-field:focus {
+  border-color: #66a6ff;
+}
+
+/* Typing Text */
+.typing-text {
+  background: #f4f6f9;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Content Box */
+.content-box {
+  margin-top: 10px;
+}
+
+/* Result Details */
+.result-details {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.result-details li {
+  text-align: center;
+  flex: 1;
+}
+
+.result-details p {
+  font-size: 14px;
+  color: #777;
+}
+
+.result-details span p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button */
+button {
+  background: #66a6ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4a90e2;
+}
+
+.typing-text p span{
+  position: relative;
+}
+
+.typing-text p span.active{
+  color: orange;
+}
+
+
+.typing-text p span.correct{
+  color: green;;
+}
+
+.typing-text p span.incorrect{
+  color: red;
+}
+
