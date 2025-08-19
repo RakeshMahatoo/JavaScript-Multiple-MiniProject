@@ -1,11 +1,9 @@
 const typingText = document.querySelector('.typing-text p');
-console.log(typingText)
 const input = document.querySelector('.wrapper .input-field');
 const time = document.querySelector('.time span p');
 const mistake = document.querySelector('.mistake span p');
 const wpm = document.querySelector('.wpm span p');
 const cpm = document.querySelector('.cpm span p');
-
 const btn = document.querySelector('button');
 
 // set value
@@ -75,7 +73,7 @@ function initTyping() {
 
 }
 
-
+// manupulate timer and wpmVal speed
 function initTimer() {
     if (timeLeft > 0) {
         timeLeft--;
@@ -87,6 +85,10 @@ function initTimer() {
         clearInterval(timer);
     }
 }
+
+
+// reset function
+
 
 function reset() {
     loadParagraph();

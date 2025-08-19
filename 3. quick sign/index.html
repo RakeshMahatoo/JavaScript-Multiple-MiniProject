@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="black">
+                <p>Text Color Picker</p>
+                <input type="color" class="form-control" id="colorPicker">
+            </div>
+            <div class="black">
+                <p>Background</p>
+                <input type="color" class="form-control" id="canvasColor">
+            </div>
+            <div class="black">
+                <p>Font size</p>
+                <select name="" id="fontPicker">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                    <option value="25">25px</option>
+                    <option value="30">30px</option>
+                    <option value="35">35px</option>
+                    <option value="40">40px</option>
+                    <option value="45">45px</option>
+                    <option value="50">50px</option>
+                    <option value="55">55px</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+
+        <div class="bottom">
+            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+            <button type="button" class="btn btn-success" id="saveButton">Save & Download</button>
+            <button type="button" class="btn btn-save" id="savebtn">Save</button>
+            <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve saved signature</button>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="try.js"></script>
+</body>
+</html>
