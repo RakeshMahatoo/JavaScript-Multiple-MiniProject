@@ -1,0 +1,39 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff6600; /* hover effect */
+}
