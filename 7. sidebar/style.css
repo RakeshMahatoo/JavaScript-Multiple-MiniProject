@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.black-document {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.three-dots {
+  font-size: 40px;
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  position: fixed;
+  width: 0; /* hidden initially */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: orange;
+  transition: width 0.4s ease; /* smooth sliding */
+  padding-top: 60px;
+}
+
+.cut {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.nav {
+  margin-top: 80px;
+}
+
+.nav ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.nav ul li {
+  margin: 20px 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: black;
+}

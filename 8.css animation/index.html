@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+      gap: 10px;
+    }
+    .item {
+      background: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+     .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: move 3s infinite alternate;
+    }
+    @keyframes move {
+      from { left: 0; }
+      to { left: 200vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+  <div class="box"></div>
+</body>
+</html>
