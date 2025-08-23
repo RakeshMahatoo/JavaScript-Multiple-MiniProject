@@ -1,0 +1,35 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#textInput{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(17, 237, 64);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#output{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
