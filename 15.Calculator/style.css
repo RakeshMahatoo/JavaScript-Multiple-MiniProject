@@ -1,0 +1,123 @@
+/* Import a font for a clean, modern look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Basic styling for the entire page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styles for the main container that centers the calculator */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+/* Styles for the calculator display and its buttons */
+.calc {
+    width: 20rem; /* Fixed width for a desktop-like calculator */
+    max-width: 100%;
+}
+
+/* Styling for the display area (h1 with id="input") */
+#input {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+/* Flexbox container for each row of buttons */
+#btnSec {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /*Space between buttons */
+    margin-bottom: 1rem;
+}
+
+/* Styles for all the calculator buttons */
+button {
+    flex: 1; /* Makes each button in the row take up equal space */
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #475569;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Style for operator buttons (+, -, *, /) */
+button:nth-child(4) {
+    background-color: #93c5fd;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Style for special buttons like C, <, % */
+button:nth-child(-n+3) {
+    background-color: #cbd5e1;
+}
+
+/* Style for the equals button */
+button:last-child {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+}
+
+/* Hover and active states for interactive feedback */
+button:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Special hover for operator and equals buttons */
+button:nth-child(4):hover, button:last-child:hover {
+    background-color: #60a5fa;
+}
+
+button:last-child:hover {
+    background-color: #2563eb;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 425px) {
+    .calc {
+        width: 18rem;
+    }
+    #input {
+        font-size: 2rem;
+    }
+    button {
+        font-size: 1.1rem;
+    }
+}
