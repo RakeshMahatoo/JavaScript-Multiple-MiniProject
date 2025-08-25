@@ -19,5 +19,6 @@ button.forEach((element)=>{
         else{
             input.innerText += evalue;
         }
+        console.log("what is the value of input", input.innerText);
     })
 })

@@ -1,0 +1,71 @@
+/* Basic body reset */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* The main container that acts as the viewport */
+.slider-container {
+    position: relative; /* Establishes a positioning context for the buttons */
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Creates a responsive 16:9 aspect ratio */
+    overflow: hidden; /* This is the key: hides the slides that are outside the container */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* The "filmstrip" that holds all the slides */
+.sliders {
+    display: flex;
+    width: 300%; /* Since there are 3 slides, the total width is 3 * 100% */
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Animates the slide transition */
+}
+
+/* Each individual slide */
+.slide {
+    width: 100%; /* Ensures each slide takes up the full container width */
+    flex-shrink: 0; /* Prevents slides from shrinking */
+}
+
+/* Image styling */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill /* Ensures the image covers the slide area without distortion */
+}
+
+/* Styling for both Prev and Next buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%; /* Positions the button halfway down from the top */
+    transform: translateY(-50%); /* Vertically centers the button perfectly */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Specific position for the 'prev' button */
+.prev {
+    left: 10px;
+}
+
+/* Specific position for the 'next' button */
+.next {
+    right: 10px;
+}
